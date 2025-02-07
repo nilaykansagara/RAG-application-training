@@ -5,6 +5,10 @@ import { ChatService } from './chat.service';
 export class ChatController {
   constructor(private chatService: ChatService) {}
 
+  // @Get('/')
+  // getResponse(@Query('query') query: string): any {
+  //   return this.chatService.getResponse(query);
+  // }
   @Get('/')
   getResponse(@Query('query') query: string): any {
     return this.chatService.getResponse(query);

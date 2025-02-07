@@ -6,7 +6,6 @@ import {
 } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { diskStorage } from 'multer';
-import { ChatService } from '../chat/chat.service';
 import { EmbeddingService } from './embedding.service';
 
 @Controller('upload')
